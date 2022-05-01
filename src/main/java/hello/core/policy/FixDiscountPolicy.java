@@ -1,7 +1,7 @@
 package hello.core.policy;
 
-import hello.core.domain.Grade;
-import hello.core.domain.Member;
+import hello.core.member.Grade;
+import hello.core.member.Member;
 
 public class FixDiscountPolicy implements DiscountPolicy{
     @Override
