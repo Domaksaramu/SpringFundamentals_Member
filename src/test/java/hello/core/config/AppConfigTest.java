@@ -11,7 +11,7 @@ public class AppConfigTest {
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
     @Test
-    @DisplayName("모든 빈 출력하기")
+    @DisplayName("모든 빈 불러오기")
     void findAllBean(){
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         System.out.println("defaultCharset : " + Charset.defaultCharset().displayName());
