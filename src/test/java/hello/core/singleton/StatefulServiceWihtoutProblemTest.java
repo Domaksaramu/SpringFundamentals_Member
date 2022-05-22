@@ -1,5 +1,6 @@
-package hello.core.order;
+package hello.core.singleton;
 
+import hello.core.order.StatefulServiceWihtoutProblem;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

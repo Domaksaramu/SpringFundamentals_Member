@@ -8,7 +8,7 @@ public class StatefulService {
 
         this.price = price;
     }
-    int getPrice(){
+    public int getPrice(){
         return this.price;
     }
 }

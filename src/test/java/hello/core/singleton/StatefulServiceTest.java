@@ -1,5 +1,6 @@
-package hello.core.order;
+package hello.core.singleton;
 
+import hello.core.order.StatefulService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -21,7 +22,7 @@ class StatefulServiceTest {
         statefulService2.order("ThreadB",20000);
 
         assertThat(statefulService1.getPrice()).isEqualTo(statefulService2.getPrice());
-        assertThat(statefulService1.getPrice()).isEqualTo(20000);
+        assertThat(statefulService2.getPrice()).isEqualTo(20000);
     }
 
     static class TestConfig{
